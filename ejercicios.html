@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurante - Inicio</title>
+    <link rel="stylesheet" href="./estilos/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sabor Auténtico</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="menu.html">Menú</a>
+            <a href="confirmacion.html">Confirmación</a>
+        </nav>
+    </header>
+    
+    <section>
+        <h2> ejercicios de javascript</h2>
+
+        <p> 1. Detectar si la cadena de entrada en un palíndromo.</p>
+
+        <div class="container">
+            <h1>Verificador de Palíndromos</h1>
+            <form id="palindromeForm">
+                <label for="inputString">Ingresa una cadena:</label>
+                <input type="text" id="inputString" required>
+                <button type="button" onclick="checkPalindrome()">Verificar</button>
+            </form>
+            <p id="result"></p>
+        </div>
+
+        <p>2. Escribe un programa que pida dos números y escriba en la pantalla cual es el
+            mayor.</p>
+
+            <div>
+                <h1>Comparador de Números</h1>
+                <label for="numero1">Ingrese el primer número:</label>
+                <input type="text" id="numero1" required>
+                <br>
+                <label for="numero2">Ingrese el segundo número:</label>
+                <input type="text" id="numero2" required>
+                <br>
+                <button onclick="compararNumeros()">Comparar</button>
+                <p id="resultado"></p>
+            </div>   
+
+        <p>3. Escribe un programa que pida una frase (mínimo de dos líneas), y de forma
+            organizada y escriba las vocales aparecen (a, e, i, o u) que aparecen.</p>
+        <div class="container">
+            <h1>Organizador de Vocales</h1>
+            <label for="inputFrase">Ingresa una frase (mínimo de dos líneas):</label>
+            <textarea id="inputFrase" rows="4" cols="50" required></textarea>
+            <button onclick="organizarVocales()">Organizar Vocales</button>
+            <div id="resultado"></div>
+        </div>
+
+        <h2>ejercicios con ajax.</h2>
+
+        <p>1. Al cargar la página, el cuadro de texto debe mostrar por defecto la URL de la
+            propia página.</p>
+        
+            <div class="container">
+                <h1>Mostrar URL</h1>
+                <!-- Nuevo elemento para mostrar la URL -->
+                <div id="urlDisplay">URL de la página: </div>
+            </div>  
+        <p>2. Al pulsar el botón Mostrar Contenidos, se debe descargar mediante peticiones
+            AJAX el contenido correspondiente a la URL introducida por el usuario. El
+            contenido de la respuesta recibida del servidor en se debe mostrar en la zona
+            de Contenidos del archivo.</p>
+            <div class="container">
+                <h1>Mostrar Contenidos</h1>
+                <div id="urlDisplay">URL de la página: </div>
+                <label for="inputURL">Introduce una URL:</label>
+                <input type="text" id="inputURL" placeholder="https://ejemplo.com" required>
+                <button onclick="mostrarContenidos()">Mostrar Contenidos</button>
+                <div id="contenidos"></div>
+            </div>
+
+            <p>3. En la zona Estados de la petición se debe mostrar en todo momento el estado
+                en el que se encuentra la petición (no iniciada, cargando, completada, etc.).
+                </p>
+                <div class="container">
+                    <h1>Estados de la Petición</h1>
+                    <label for="inputURL">Introduce una URL:</label>
+                    <input type="text" id="inputURL" placeholder="https://ejemplo.com" required>
+                    <button onclick="realizarPeticion()">Realizar Petición</button>
+                    <div id="estados">Estado de la petición: No iniciada</div>
+                    <div id="respuesta"></div>
+                </div>
+
+                <p>4. Mostrar el contenido de todas las cabeceras de la respuesta del servidor en la
+                    zona Cabeceras HTTP de la respuesta del servidor.</p>
+            
+                <div class="container">
+                    <h1>Cabeceras HTTP de la Respuesta</h1>
+                    <label for="inputURL">Introduce una URL:</label>
+                    <input type="text" id="inputURL" placeholder="https://ejemplo.com" required>
+                    <button onclick="obtenerCabeceras()">Obtener Cabeceras</button>
+                    <div id="cabeceras"></div>
+                </div>
+
+                <p>5. Mostrar el código y texto de la respuesta del servidor en la zona Código de
+estado.</p>
+
+                <div class="container">
+                    <h1>Código de Estado de la Respuesta</h1>
+                    <label for="inputURL">Introduce una URL:</label>
+                    <input type="text" id="inputURL" placeholder="https://ejemplo.com" required>
+                    <button onclick="obtenerCodigoEstado()">Obtener Código de Estado</button>
+                    <div id="codigoEstado"></div>
+                </div>
+    
+        <script src="./javascrypt/script.js"></script>
+    </section>
+</body>
+</html>
